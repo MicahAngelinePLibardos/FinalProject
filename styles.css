@@ -1,58 +1,88 @@
-    body {
-    font-family: serif;
+body {
+    background-color: #FFF5F8; 
+    font-family: 'Arial', sans-serif; 
     margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #FFB6C1;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 .image-gallery {
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    justify-content: space-evenly;
+    align-items:
+    margin: 40px 0;
 }
 
 .image-item {
     text-align: center;
-    margin: 0 30px;
+    width: 200px;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.image-gallery img {
-    width: 350px;
-    height: 280px;
-    margin: 0 38px;
-    object-fit: cover;
-}
-
-.image-gallery img:hover {
+.image-item:hover {
     transform: scale(1.05); 
-    border: 3px solid #ff69b4;
 }
 
-.image-gallery img:focus, .image-gallery img:active {
-    outline: 3px solid #ff69b4; 
-    transform: scale(1.05); 
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item img:hover {
+    transform: scale(1.1); 
 }
 
 .image-item p {
+    font-size: 18px;
+    color: #666;
     margin-top: 10px;
-    font-size: 20px;
-    color: #000;
+    font-weight: bold;
 }
 
-.image-item p:hover {
-    color: #8b0000; 
+footer {
+    width: 100%;
+    text-align: center; 
+    padding: 20px 0; 
+    color: #333; 
+    position: relative;
+    bottom: 0;
 }
 
-a {
-    color: #ff69b4; 
-    text-decoration: none;
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-a:hover {
-    color: #8b0000; 
+body {
+    flex: 1;
 }
 
-a:focus, a:active {
-    color: #4b0082; 
-}   
+footer {
+    margin-top: auto; 
+}
+
+
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-item {
+        width: 80%; 
+    }
+}
