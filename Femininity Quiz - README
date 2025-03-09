@@ -1,0 +1,27 @@
+How the Quiz Works:
+  The quiz consists of five multiple-choice questions, each with four answer options. Users must select an answer before proceeding to the next question. The quiz provides visual feedback by highlighting:
+    - Green for correct answers
+    - Red for incorrect answers
+At the end of the quiz, the user receives a final score out of five.
+
+
+Features:
+  Interactive Questions: Users answer one question at a time before moving forward.
+  Answer Validation: The quiz ensures users select an option before proceeding.
+  Color Indicators: Correct and incorrect answers are visually highlighted.
+  Navigation Buttons:
+      - "Next" to move forward after selecting an answer.
+      - "Previous" to go back to a previous question.
+      - "Submit" to view the final score at the end.
+  Modular JavaScript Code:
+      - Uses functions to manage quiz logic.
+      - Implements event handlers for user interactions.
+      - Controls quiz flow with if-else statements and loops.
+
+
+Integration:
+The quiz is embedded within the Femininity SDG Website, specifically on a dedicated quiz section. It is structured using:
+  HTML for quiz layout.
+  CSS for styling and responsiveness.
+  JavaScript (external file: script.js) for quiz functionality.
+
